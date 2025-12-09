@@ -1,101 +1,158 @@
 # biopelayo – Computational Biology & Plant Chromatin
 
-Bienvenido al perfil de código de **Pelayo González de Lena** (@biopelayo).  
-Este repositorio actúa como **punto de entrada** al ecosistema de proyectos
-relacionados con mi tesis doctoral sobre **histone PTMs en plantas** y,
-en particular, sobre la detección y cuantificación de **H3K79** en *Arabidopsis thaliana*.
+Welcome to the GitHub space of **Pelayo González de Lena** (@biopelayo).
+
+This account serves as the **entry point** to a set of repositories built
+around my doctoral work on **histone post-translational modifications (hPTMs) in plants**,  
+with a particular focus on the detection and quantification of **H3K79** in *Arabidopsis thaliana*.
 
 ---
 
-## 1. Quién soy
+## 1. Profile
 
-Soy bioinformático / biólogo computacional y FPI en la Universidad de Oviedo.
-Trabajo en la interfaz entre **epigenómica vegetal**, **proteómica de histonas**
-y **desarrollo de software reproducible** para interpretar datos ómicos a gran escala.
+I am a **computational biologist / bioinformatician** and **FPI fellow (PRE2019-091395)**
+at the University of Oviedo.
 
-Mis intereses actuales incluyen:
+My work sits at the interface between:
 
-- Lectura proteómica del **“código de histonas”** en plantas.
-- Desarrollo de pipelines abiertos para hPTMs: de **WIFF/RAW → mzML → hPTM matrices**.
-- Integración de datos públicos PRIDE / ProteomeXchange en flujos de
-  análisis reproducibles.
-- Formación en bioinformática para biólogos (cursos, material docente, Quarto, etc.).
+- **Plant epigenomics** and chromatin regulation.
+- **Histone proteomics** and quantitative analysis of hPTMs.
+- **Reproducible software development** for large-scale omics.
+- **FAIR data management** for public repositories (PRIDE / ProteomeXchange).
+
+I routinely work with **Linux, WSL2, Docker, R, Python and MATLAB**, and I am interested in
+turning “one-off” analysis scripts into **well-documented, reusable workflows**.
 
 ---
 
-## 2. Tesis doctoral: H3K79 in Arabidopsis
+## 2. Research focus
 
-El repositorio principal de la tesis es:
+Current interests include:
 
-- 📘 **Tesis H3K79 – `thesis-h3k79-arabidopsis`**  
+- Proteomic readout of the **“histone code”** in plants, with emphasis on **H3K79me1/2/3 and H3K79ac**.
+- End-to-end pipelines for hPTMs:
+
+  > `WIFF / RAW → mzML → MS1 / MS2 → EpiProfile_PLANTS → hPTM matrices → figures`
+
+- Systematic re-analysis of **public datasets (PRIDE / ProteomeXchange)** under a common,
+  documented workflow.
+- **Training and materials for biologists** entering bioinformatics:
+  courses, hands-on sessions, and written material (Quarto, notebooks, slides).
+
+---
+
+## 3. Doctoral thesis: H3K79 in *Arabidopsis thaliana*
+
+My PhD thesis focuses on **plant histone epiproteomics**, combining:
+
+- A software and methods chapter on **EpiProfile_PLANTS** for plant datasets.
+- An ontogeny study of the **Arabidopsis rosette** (leaf developmental gradient).
+- A reproducible re-analysis of selected public datasets (e.g. genotoxic stress in *Arabidopsis*).
+- A synthesis of how **H3K79** behaves across development and stress conditions.
+
+Main repository:
+
+- **Doctoral thesis – `thesis-h3k79-arabidopsis`**  
   <https://github.com/biopelayo/thesis-h3k79-arabidopsis>
 
-En él irán:
+Expected contents:
 
-- El texto de la tesis (LaTeX/Quarto).
-- Figuras y esquemas de los distintos capítulos.
-- Manifiestos que documentan qué datasets PRIDE se usan y cómo se analizan.
-- Material suplementario (tablas, scripts de análisis, etc.).
-
----
-
-## 3. EpiProfile_PLANTS ecosystem
-
-El núcleo de herramientas para proteómica de histonas en plantas se organiza en
-dos repositorios principales:
-
-- 🧬 **EpiProfile_PLANTS (MATLAB) – `epiprofile-plants`**  
-  <https://github.com/biopelayo/epiprofile-plants>  
-  Extensión de EpiProfile 2.0 para plantas. Incluye:
-  - Catálogos de péptidos de histonas para *Arabidopsis*, *Marchantia* y *Chlamydomonas*.
-  - Paneles especie-específicos (H3/H4/H2A…) y layouts de cuantificación.
-  - Utilidades de QC y generación de figuras.
-
-- 🧪 **Workflow WIFF→mzML→MS1/MS2→EpiProfile – `epiprofile-plants-workflow`**  
-  <https://github.com/biopelayo/epiprofile-plants-workflow>  
-  Pipeline reproducible para:
-  - Descargar datos de PRIDE.
-  - Convertir WIFF/RAW a mzML con `msconvert` (Docker/WSL).
-  - Extraer MS1/MS2 y preparar inputs para EpiProfile_PLANTS.
-  - Ejecutar análisis por lotes y producir salidas listas para downstream (R/Python).
+- Thesis text (LaTeX / Quarto), following the UNIOVI structure.
+- Figures, diagrams and iconography of the WIFF→Biology workflow.
+- Manifests describing which **PXD** accessions are used, and how.
+- Supplementary material:
+  - hPTM matrices and summary tables.
+  - R/Python scripts and notebooks for QC and downstream analysis.
 
 ---
 
-## 4. Otros pipelines y proyectos relacionados
+## 4. EpiProfile_PLANTS ecosystem
 
-- 🥩 **K-CHOPORE – `k-chopore` (fork)**  
+A central component of my work is **EpiProfile_PLANTS**, an adaptation and extension
+of **EpiProfile 2.0** tailored to plant data and modern workflows.
+
+### 4.1 Core MATLAB code – `epiprofile-plants`
+
+- **EpiProfile_PLANTS (MATLAB) – `epiprofile-plants`**  
+  <https://github.com/biopelayo/epiprofile-plants>
+
+Key elements:
+
+- Histone peptide catalogs for:
+  - *Arabidopsis thaliana* (AT)
+  - *Marchantia polymorpha* (MP)
+  - *Chlamydomonas reinhardtii* (CR)
+- Species-specific panels for H3, H4, H2A, etc., and corresponding layouts.
+- A documented separation between:
+  - Functions reused verbatim from EpiProfile 2.0.
+  - Functions modified for plant workflows.
+  - New functions developed for EpiProfile_PLANTS.
+- Utilities for:
+  - QC and chromatogram inspection.
+  - Isotopic profile visualization.
+  - Auditing runs and panels.
+
+### 4.2 Workflow WIFF→mzML→MS1/MS2→EpiProfile – `epiprofile-plants-workflow`
+
+- **Workflow – `epiprofile-plants-workflow`**  
+  <https://github.com/biopelayo/epiprofile-plants-workflow>
+
+This repository is designed as an **end-to-end, reproducible pipeline**:
+
+1. **Dataset inventory and download** from PRIDE (R packages such as `rpx`, etc.).
+2. **Conversion** `WIFF / RAW → mzML` using `msconvert` (Docker / WSL2).
+3. **Extraction** of MS1 / MS2 and preparation of inputs for EpiProfile_PLANTS.
+4. **Batch execution** of EpiProfile_PLANTS.
+5. Generation of outputs ready for:
+   - QC and statistics in **R**.
+   - Integration into reports, Shiny dashboards or notebooks.
+
+The goal is that every step—from raw vendor files to the final hPTM matrices—is
+**transparent, version-controlled and shareable**.
+
+---
+
+## 5. Other pipelines and related projects
+
+Some related or satellite projects include:
+
+- **K-CHOPORE – `k-chopore` (fork)**  
   <https://github.com/biopelayo/k-chopore>  
-  Pipeline para análisis de modificaciones de RNA y datos transcriptómicos,
-  adaptado a especies vegetales. Inspirado en el “cachopo” asturiano.
+  Pipeline for **RNA modification and transcriptomics** analysis, adapted or being
+  adapted to plant species.
 
-En el futuro, aquí irán enlaces a otros proyectos satélite (por ejemplo,
-preQC en Python, dashboards de R Shiny o módulos de análisis evolutivo).
+- **Pre-QC for histone proteomics – `preqc-histones-py`** *(in development)*  
+  Python modules for:
+  - Dataset inventory and basic metadata.
+  - Standard directory structures (e.g. `raw_wiff/`, `mzML/`, `MS1_MS2/`, `EpiProfile_output/`, `phenodata/`).
+  - Pre-EpiProfile QC and sanity checks.
 
----
-
-## 5. Datos públicos y reproducibilidad
-
-Buena parte de este trabajo se apoya en datasets públicos de
-**ProteomeXchange/PRIDE**. En los repos específicos (tanto en la tesis como
-en los workflows) encontrarás:
-
-- Listas de accesiones PXD utilizadas.
-- Scripts para descargar y organizar los RAW/WIFF.
-- Estructuras de carpetas estandarizadas para todo el flujo
-  WIFF → mzML → MS1/MS2 → hPTM matrices → figuras.
-
-El objetivo es que otros grupos puedan **reproducir el análisis completo**
-o reutilizar partes del pipeline en sus propios datos.
+- **Dashboards and Shiny apps** *(planned)*  
+  Interactive QC, heatmaps of hPTMs, and exploratory views for evolutionary
+  comparisons (e.g. conserved H3/H4 peptides across species).
 
 ---
 
-## 6. Contacto y presencia online
+## 6. Public data, FAIR principles and reproducibility
 
-- 🌐 Web personal: <https://biopelayo.github.io>
-- 📧 Correo: bio.pelayo@gmail.com
-- 🧪 ORCID: *(añadir cuando quieras)*
-- 💼 LinkedIn: *(añadir URL)*
-- 🧵 Twitter / X: *(opcional)*
+A substantial part of this work builds on **public ProteomeXchange / PRIDE datasets**,
+both my own and third-party.
 
-Si quieres colaborar en temas de epigenómica vegetal, proteómica de histonas
-o desarrollo de pipelines reproducibles, estaré encantado de hablar.
+Across the repositories you will find:
+
+- Explicit lists of **PXD accessions** used in each analysis.
+- Scripts and notebooks to:
+  - Download raw data.
+  - Check integrity and size.
+  - Organize files into consistent directory trees.
+- Standardized layouts such as:
+
+  ```text
+  raw_wiff/
+  mzML/
+  MS1_MS2/
+  EpiProfile_output/
+  layouts/
+  phenodata/
+  R/
+  docs/
