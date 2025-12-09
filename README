@@ -63,4 +63,39 @@ dos repositorios principales:
 
 ## 4. Otros pipelines y proyectos relacionados
 
-- 🥩 **K-CHOPORE – `k-ch**
+- 🥩 **K-CHOPORE – `k-chopore` (fork)**  
+  <https://github.com/biopelayo/k-chopore>  
+  Pipeline para análisis de modificaciones de RNA y datos transcriptómicos,
+  adaptado a especies vegetales. Inspirado en el “cachopo” asturiano.
+
+En el futuro, aquí irán enlaces a otros proyectos satélite (por ejemplo,
+preQC en Python, dashboards de R Shiny o módulos de análisis evolutivo).
+
+---
+
+## 5. Datos públicos y reproducibilidad
+
+Buena parte de este trabajo se apoya en datasets públicos de
+**ProteomeXchange/PRIDE**. En los repos específicos (tanto en la tesis como
+en los workflows) encontrarás:
+
+- Listas de accesiones PXD utilizadas.
+- Scripts para descargar y organizar los RAW/WIFF.
+- Estructuras de carpetas estandarizadas para todo el flujo
+  WIFF → mzML → MS1/MS2 → hPTM matrices → figuras.
+
+El objetivo es que otros grupos puedan **reproducir el análisis completo**
+o reutilizar partes del pipeline en sus propios datos.
+
+---
+
+## 6. Contacto y presencia online
+
+- 🌐 Web personal: <https://biopelayo.github.io>
+- 📧 Correo: bio.pelayo@gmail.com
+- 🧪 ORCID: *(añadir cuando quieras)*
+- 💼 LinkedIn: *(añadir URL)*
+- 🧵 Twitter / X: *(opcional)*
+
+Si quieres colaborar en temas de epigenómica vegetal, proteómica de histonas
+o desarrollo de pipelines reproducibles, estaré encantado de hablar.
