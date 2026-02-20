@@ -145,6 +145,7 @@ graph LR
 ```
 
 </div>
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/2dc48dcd-1bde-4de7-aa7c-651dc167b1bb" />
 
 Currently applied to an ***Arabidopsis thaliana*** 2x2 factorial experiment (WT vs *anac017-1* mutant x Control vs Antimycin A):
 
