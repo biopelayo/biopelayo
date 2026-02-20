@@ -1,186 +1,289 @@
-# 🧬 Pelayo González de Lena — Computational Biology & Plant Chromatin
+<div align="center">
 
-Hi, I’m **Pelayo González de Lena** (`@biopelayo`) — a computational biologist / bioinformatician working on **histone post-translational modifications (hPTMs) in plants**, with a special focus on **H3K79** in *Arabidopsis thaliana*.
+<!-- Typing SVG Header -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1500&color=39FF73&center=true&vCenter=true&multiline=true&repeat=true&width=750&height=80&lines=Hacking+histone+codes+in+plants+%F0%9F%8C%B1;From+raw+signal+to+biological+insight+%F0%9F%A7%AC)](https://biopelayo.github.io)
 
-<img width="741" height="1024" alt="image" src="https://github.com/user-attachments/assets/0fabe2c6-8ccc-4ad9-bf0e-47f8974d11fa" />
+<br>
 
+<img width="741" height="1024" alt="Pelayo González de Lena — Computational Biology" src="https://github.com/user-attachments/assets/0fabe2c6-8ccc-4ad9-bf0e-47f8974d11fa" />
 
-This account is the hub for my **PhD thesis**, the **EpiProfile_PLANTS** ecosystem, and several workflows and teaching materials around reproducible omics.
+<br>
 
----
+# Pelayo González de Lena
 
-## 🔍 What I work on right now
+**`Computational Biologist · Plant Epigenomicist · PhD Candidate`**
 
-- **Plant epigenomics & chromatin regulation**
-- **Histone proteomics and quantitative hPTMs**, especially H3K79me1/2/3 and H3K79ac  
-- **End-to-end, reproducible workflows** for:
-  `WIFF / RAW → mzML → MS1/MS2 → EpiProfile_PLANTS → hPTM matrices → figures`
-- **FAIR data practices** for PRIDE / ProteomeXchange datasets
-- **Training biologists in bioinformatics** (Linux, R/Bioconductor, Python, workflows)
+[![Website](https://img.shields.io/badge/biopelayo.github.io-0a0e17?style=for-the-badge&logo=github-pages&logoColor=39ff73)](https://biopelayo.github.io)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--9409--1457-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-9409-1457)
+[![Email](https://img.shields.io/badge/bio.pelayo@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bio.pelayo@gmail.com)
 
-I currently hold an **FPI fellowship (PRE2019-091395)** at the **University of Oviedo**, where my PhD thesis centres on H3K79 in *Arabidopsis* within the broader context of plant epiproteomics and chromatin regulation.
-
----
-
-## 📚 PhD thesis: H3K79 in *Arabidopsis thaliana*
-
-My thesis combines:
-
-1. A **software / methods chapter** on _EpiProfile_PLANTS_ for plant datasets.  
-2. An **ontogeny study of the Arabidopsis rosette** (leaf developmental gradient, BGSR: YNG/BOT/FLOR/SEN).  
-3. A **re-analysis of public datasets** (e.g. genotoxic stress in *Arabidopsis*).  
-4. A **synthesis of H3K79 behaviour** across development and stress-related contexts.
-
-**Main repository**
-
-- 📘 **Thesis – `thesis-h3k79-arabidopsis`**  
-  → thesis text (LaTeX/Quarto), figures, analysis notebooks, and manifests documenting which PRIDE datasets and which versions of EpiProfile_PLANTS / workflows are used in each chapter.
+</div>
 
 ---
 
-## 🧪 EpiProfile_PLANTS ecosystem
+## About me
 
-A central piece of my work is **EpiProfile_PLANTS**, an extension of **EpiProfile 2.0** tailored to plant histone proteomics and modern, automated workflows.
+I'm a computational biologist and bioinformatician working on **histone post-translational modifications (hPTMs) in plants**, with a special focus on **H3K79** methylation and acetylation in *Arabidopsis thaliana*.
 
-### 1️⃣ Core MATLAB code — `epiprofile-plants`
+Currently finishing my **PhD** at the **University of Oviedo** (FPI fellowship PRE2019-091395), building the **EpiProfile_PLANTS** ecosystem for reproducible plant histone proteomics. Previously at the **Spanish National Cancer Research Centre (CNIO)** in the Computational Cancer Genomics Group.
 
-- MATLAB codebase for **plant-specific EpiProfile**:
-  - Histone peptide catalogues and layouts for:
-    - *Arabidopsis thaliana* (AT)  
-    - *Marchantia polymorpha* (MP)  
-    - *Chlamydomonas reinhardtii* (CR)
-  - Species-specific panels for H3, H4, H2A, etc.
-  - Separation between:
-    - Files reused verbatim from EpiProfile 2.0  
-    - Files adapted for plants  
-    - New functions developed for EpiProfile_PLANTS
-  - Utilities for QC, chromatogram inspection and isotopic profile visualisation.
+This account hosts my thesis work, analysis pipelines, teaching materials, and everything in between.
 
-### 2️⃣ Workflow WIFF→mzML→MS1/MS2→EpiProfile — `epiprofile-plants-workflow`
+<br>
 
-- Docker + Snakemake workflow to:
-  1. Organise PRIDE/ProteomeXchange datasets in a standard layout.
-  2. Convert vendor files (e.g. SCIEX WIFF/WIFFSCAN) to `mzML` via **msconvert** in Docker.
-  3. Extract `MS1` / `MS2` text files required by EpiProfile.
-  4. Run EpiProfile_PLANTS with species-specific layouts.
-  5. Produce analysis-ready hPTM matrices for downstream R/Python analysis.
+<div align="center">
 
-Typical use cases include:
+### Tech stack
 
-- Re-analysing PXD datasets (e.g. **PXD010102**, **PXD046034**) under a unified workflow.  
-- Internal ontogeny datasets for *Arabidopsis* rosettes (BGSR).  
-- Small demonstration sets (e.g. **ONTOGENY_DEMO** as a fully documented mini-dataset).
+![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Snakemake](https://img.shields.io/badge/Snakemake-5BB974?style=flat-square&logo=snakemake&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 
----
+![Bioconductor](https://img.shields.io/badge/Bioconductor-BioC-87b13f?style=flat-square)
+![DESeq2](https://img.shields.io/badge/DESeq2-DE_analysis-276DC3?style=flat-square)
+![Plotly](https://img.shields.io/badge/Plotly%20%2F%20Dash-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+![Minimap2](https://img.shields.io/badge/Minimap2-splice_aware-orange?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
-## 🧰 Other pipelines and side projects
-
-Some related / satellite projects:
-
-- 🥩 **K-CHOPORE (`k-chopore`)**  
-  A bioinformatics pipeline for RNA modification and transcriptomics analysis, adapted (or being adapted) to **plant species**. Inspired by the Asturian *cachopo*.
-
-- 🧪 **Pre-QC for histone proteomics (`preqc-histones-py`, in progress)**  
-  Python modules for:
-  - Dataset inventory and basic metadata checks  
-  - Enforcing a standard directory structure for histone proteomics  
-  - Pre-EpiProfile sanity checks (file completeness, NA/zero structure, etc.)
-
-- 🌐 **Personal website (`biopelayo.github.io`)**  
-  A hub for:
-  - Short bio and CV highlights  
-  - Research projects in plant epigenomics and epiproteomics  
-  - Blog-style notes, slides and teaching material  
-  - Documentation and visual material linked to EpiProfile_PLANTS
+</div>
 
 ---
 
-## 🧱 Data, layout and reproducibility principles
+## Current research focus
 
-Across my repositories you will find:
-
-- **Explicit lists of PXD accessions** used in each analysis.  
-- Scripts/notebooks to:
-  - Download and verify raw data  
-  - Organise it into **standard directory trees**, typically:
-
-    ```text
-    raw_wiff/
-    mzML/
-    MS1_MS2/
-    EpiProfile_output/
-    layouts/
-    phenodata/
-    R/
-    docs/
-    ```
-
-- A strong emphasis on:
-  - Reproducing complete analyses from **WIFF/RAW to figures**  
-  - Reusing individual components (conversion, EpiProfile_PLANTS, downstream statistics)  
-  - Aligning everything with **FAIR principles** (findable, accessible, interoperable, reusable)
-
-Where possible, I release code and workflows under **copyleft licences** (GPL family) and accompany them with documentation that can be cited in manuscripts and theses.
+| Area | Description |
+|:---|:---|
+| **Plant epigenomics** | Chromatin regulation and histone PTM landscapes in *Arabidopsis*, *Marchantia*, *Chlamydomonas* |
+| **H3K79 in plants** | Characterising H3K79me1/2/3 and H3K79ac across development and stress |
+| **Histone proteomics** | Quantitative workflows for propionylation-based bottom-up MS |
+| **Epitranscriptomics** | Nanopore direct RNA-seq and m6A modification detection |
+| **Reproducible pipelines** | FAIR-compliant, containerised workflows from raw data to figures |
+| **Teaching** | Making bioinformatics accessible to wet-lab biologists |
 
 ---
 
-## 🧭 Background & experience (beyond the PhD)
+## The EpiProfile_PLANTS ecosystem
 
-Before and alongside the PhD, I have worked across academia, research institutes and training:
+A central piece of my PhD: an end-to-end platform for plant histone proteomics, from vendor files to publication-ready figures.
 
-- 🧬 **Computational biology & omics**
-  - Experience in **NGS / transcriptomics / lncRNA** pipelines  
-  - Work with tools such as **VEp**, FEELnc and custom analysis scripts (some early work via forks on this account).
+```
+WIFF/RAW ──▶ mzML ──▶ MS1/MS2 ──▶ EpiProfile_PLANTS ──▶ hDP/hPF/hPTM ──▶ Dashboard ──▶ Figures
+   │            │          │              │                    │               │
+   │      msconvert    xtract_xml    MATLAB core        3-tier model     Dash/Plotly
+   │      (Docker)    (workflow)    (species bundles)   (audit-ready)    (7 tabs)
+   ▼            ▼          ▼              ▼                    ▼               ▼
+ PRIDE     centroided   text files    AT / MP / CR       QC artifacts    interactive
+```
 
-- 🏥 **Research and data roles**
-  - Collaborations and positions spanning:
-    - **CNIO** (National Cancer Research Centre, Spain)  
-    - **GeoAI-related work** (geospatial / AI-driven analysis)  
-    - **ICM Lugo** (research / healthcare context)  
-    - Regional public health and research environments (e.g. FSP-linked initiatives)
+<table>
+<tr>
+<td width="33%">
 
-- 🏫 **Teaching & training**
-  - Courses and workshops with:
-    - **Instituto Asturiano de Administración Pública (IAAP)**  
-    - **University of Oviedo** and local institutions  
-    - **City Council of Oviedo**  
-    - Training companies such as **FORMACAL** and **ARTEAULA**
-  - Main topics:
-    - Linux / WSL2 / Docker for scientific computing  
-    - Introductory **Python** and **R/Bioconductor** for omics  
-    - Small, self-contained projects that connect code with real biological questions
+### [`epiprofile-plants`](https://github.com/biopelayo/epiprofile-plants)
 
-These experiences shape how I design workflows: **practical, documented, and teachable**.
+![MATLAB](https://img.shields.io/badge/MATLAB-100%25-0076A8?style=flat-square) ![License](https://img.shields.io/badge/GPL--3.0-blue?style=flat-square)
+
+Core MATLAB code. Species-specific histone peptide catalogs and layouts for *Arabidopsis*, *Marchantia*, and *Chlamydomonas*. Three-tier data model: **hDP** (peptides) / **hPF** (peptideforms) / **hPTM** (site-level). RT reference system, T1-T4 audit provenance.
+
+</td>
+<td width="33%">
+
+### [`epiprofile-plants-workflow`](https://github.com/biopelayo/epiprofile-plants-workflow)
+
+![Python](https://img.shields.io/badge/Python-79.7%25-3776AB?style=flat-square) ![Shell](https://img.shields.io/badge/Shell-20.3%25-4EAA25?style=flat-square) ![License](https://img.shields.io/badge/GPL--2.0-blue?style=flat-square)
+
+Docker + Snakemake preprocessing pipeline. PRIDE FTP download, msconvert to centroided mzML, MS1/MS2 extraction. Processed **220 raw files / 123 GB** across 3 datasets (PXD046034, PXD046788, PXD014739).
+
+</td>
+<td width="33%">
+
+### [`epiprofile-dashboard`](https://github.com/biopelayo/epiprofile-dashboard)
+
+![Python](https://img.shields.io/badge/Python-100%25-3776AB?style=flat-square) ![License](https://img.shields.io/badge/MIT-green?style=flat-square)
+
+Interactive Dash/Plotly dashboard with **7 tabs**: Histone Ratios, Single PTMs, QC Dashboard, PSM Explorer, Sample Browser, Comparisons, Correlations. Heatmaps, PCA, dendrograms, mass accuracy QC.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎓 Teaching, outreach & “Código Biológico”
+## K-CHOPORE
 
-A medium-term goal is to consolidate a broader project tentatively called **“Código Biológico”**:
+**Keen Comprehensive High-throughput Omics Pipeline Organizer** - a 9-stage Snakemake + Docker pipeline for **Oxford Nanopore direct RNA-seq** with emphasis on epitranscriptomics. Named after the Asturian *cachopo* - layers upon layers.
 
-- A space to **teach bioinformatics and computational biology to biologists** from scratch.  
-- Material will likely include:
-  - Step-by-step notebooks and slides  
-  - Recorded sessions or screencasts  
-  - Real biological examples (not toy datasets)  
-  - Reusable templates for courses in public administration and academic settings
+<div align="center">
 
-Some of this material will live in this GitHub account and be linked from my personal website.
+```mermaid
+graph LR
+    A["1. Basecalling<br/>Dorado / Guppy"] --> B["2. Filtering<br/>NanoFilt"]
+    B --> C["3. Read QC<br/>NanoPlot"]
+    C --> D["4. Alignment<br/>Minimap2"]
+    D --> E["5. Align QC<br/>samtools"]
+    E --> F["6. Isoforms<br/>FLAIR / StringTie2"]
+    F --> G["7. Epitranscriptomics<br/>ELIGOS2 / m6Anet"]
+    G --> H["8. Diff. Expression<br/>DESeq2"]
+    H --> I["9. Report<br/>MultiQC"]
+
+    style A fill:#a78bfa,stroke:#7c3aed,color:#fff
+    style B fill:#22d3ee,stroke:#06b6d4,color:#000
+    style C fill:#22d3ee,stroke:#06b6d4,color:#000
+    style D fill:#39ff73,stroke:#22c55e,color:#000
+    style E fill:#22d3ee,stroke:#06b6d4,color:#000
+    style F fill:#f59e0b,stroke:#d97706,color:#000
+    style G fill:#f472b6,stroke:#ec4899,color:#000
+    style H fill:#ef4444,stroke:#dc2626,color:#fff
+    style I fill:#e2e8f0,stroke:#94a3b8,color:#000
+```
+
+</div>
+
+Currently applied to an ***Arabidopsis thaliana*** 2x2 factorial experiment (WT vs *anac017-1* mutant x Control vs Antimycin A):
+
+| | Wild Type (WT) | *anac017-1* Mutant |
+|:---|:---:|:---:|
+| **Control** | 3 replicates | 3 replicates |
+| **Antimycin A** | 3 replicates | 1 replicate |
+
+**Results**: 20,958 isoforms quantified | 435 DEGs by genotype | 266 DEGs by treatment
+
+[![K-CHOPORE](https://img.shields.io/badge/K--CHOPORE-Repository-a78bfa?style=for-the-badge&logo=github)](https://github.com/biopelayo/K-CHOPORE)
 
 ---
 
-## 📫 Contact & online presence
+## PhD thesis: H3K79 in *Arabidopsis thaliana*
 
-- 🌐 Personal website: **https://biopelayo.github.io**  
-- ✉️ Email: **bio.pelayo@gmail.com**  
-- 🆔 ORCID: **https://orcid.org/0000-0001-9409-1457**  
-- 💼 LinkedIn / X / others: to be added as the ecosystem stabilises
+My thesis combines four chapters spanning methods, biology, and synthesis:
 
-If you are interested in:
+| Ch. | Topic | Approach |
+|:---:|:---|:---|
+| **1** | EpiProfile_PLANTS methods | Software validation, species-specific catalogs, QC framework |
+| **2** | Arabidopsis rosette ontogeny | Developmental gradient (YNG / BOT / FLOR / SEN) histone PTM profiling |
+| **3** | Re-analysis of public datasets | Genotoxic stress datasets from PRIDE (PXD010102, PXD046034, etc.) |
+| **4** | H3K79 synthesis | Behaviour across development and stress-related contexts |
 
-- Plant epigenomics and histone proteomics  
-- Reproducible workflows for omics data  
-- Collaborating on the re-analysis of PRIDE datasets related to chromatin
+---
 
-…feel free to open an Issue on any relevant repository or contact me by email.  
-**Suggestions, discussions and pull requests are very welcome.**
+## Other projects
+
+<table>
+<tr>
+<td width="50%">
+
+### VIDIO
+
+**Vision-Integrated Diagnostic Imaging Orchestrator**
+
+Multi-modal biomedical image analysis for retinal imaging, histopathology (OpenSlide), radiology (DICOM/NIfTI), and spatial transcriptomics (H5AD). Built on Falcon WSGI, PyTorch/MONAI, OpenCV, with 5-stage pipeline and TCGA integration.
+
+[![VIDIO](https://img.shields.io/badge/VIDIO-Repository-22d3ee?style=flat-square&logo=github)](https://github.com/biopelayo/VIDIO)
+
+</td>
+<td width="50%">
+
+### COURSES
+
+**Teaching materials**
+
+Linux/WSL2/Docker for scientific computing, introductory Python and R/Bioconductor for omics, and small hands-on projects connecting code with real biological questions. Courses delivered at IAAP, University of Oviedo, City Council of Oviedo, FORMACAL, and ARTEAULA.
+
+[![COURSES](https://img.shields.io/badge/COURSES-Repository-f59e0b?style=flat-square&logo=github)](https://github.com/biopelayo/COURSES)
+
+</td>
+</tr>
+</table>
+
+---
+
+## Reproducibility principles
+
+Across all repositories I follow a consistent philosophy:
+
+```text
+raw_wiff/              # Vendor files, PXD accessions documented
+mzML/                  # Converted with msconvert (Docker)
+MS1_MS2/               # Extracted text files
+EpiProfile_output/     # Quantification matrices
+layouts/               # Species-specific peptide catalogs
+phenodata/             # Sample metadata
+R/                     # Downstream statistics
+docs/                  # Documentation and manifests
+```
+
+- Every analysis links back to **explicit PXD accessions**
+- Complete reproduction from **WIFF/RAW to figures** in a single command
+- FAIR principles: findable, accessible, interoperable, reusable
+- GPL-family licences with citable documentation
+
+---
+
+## Publications
+
+| Year | Title | Venue |
+|:---:|:---|:---|
+| 2026 | [RNA Sequencing Platforms and Bioinformatics Tools](https://doi.org/10.1007/978-981-95-5183-5_2) | Book chapter |
+| 2017 | [Clusterization in head and neck squamous carcinomas based on lncRNA expression](https://doi.org/10.1186/s13148-017-0334-6) | *Clinical Epigenetics* |
+
+---
+
+## Background & experience
+
+```
+University of Oviedo    ███████████████████████████░░░  PhD (FPI) · Plant epigenomics · 2020–present
+CNIO                    ████████████████░░░░░░░░░░░░░  Computational Cancer Genomics · lncRNA / NGS
+Teaching (IAAP & more)  ██████████████████████░░░░░░░  Linux, Python, R, Docker for biologists
+GeoAI / ICM / FSP       ████████████░░░░░░░░░░░░░░░░░  Data analysis, geospatial AI, healthcare
+```
+
+---
+
+## "Codigo Biologico"
+
+A growing project to **teach bioinformatics and computational biology to biologists** from scratch:
+
+- Step-by-step notebooks and slides with real biological data
+- Recorded sessions and screencasts
+- Reusable templates for academic and public administration courses
+- Material linked from [biopelayo.github.io](https://biopelayo.github.io)
+
+---
+
+<div align="center">
+
+### GitHub stats
+
+<img src="https://github-readme-stats.vercel.app/api?username=biopelayo&show_icons=true&theme=radical&hide_border=true&bg_color=0a0e17&title_color=39ff73&icon_color=22d3ee&text_color=e2e8f0" height="170" alt="GitHub Stats" />
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=biopelayo&layout=compact&theme=radical&hide_border=true&bg_color=0a0e17&title_color=39ff73&text_color=e2e8f0" height="170" alt="Top Languages" />
+
+<br><br>
+
+[![Streak](https://streak-stats.demolab.com/?user=biopelayo&theme=radical&hide_border=true&background=0a0e17&ring=39ff73&fire=f472b6&currStreakLabel=22d3ee)](https://github.com/biopelayo)
+
+<br>
+
+---
+
+### Let's connect
+
+If you work on **plant epigenomics**, **histone proteomics**, **reproducible omics workflows**, or are interested in **re-analysing PRIDE datasets related to chromatin**, feel free to open an issue or reach out.
+
+**Suggestions, discussions, and pull requests are very welcome.**
+
+[![Website](https://img.shields.io/badge/Website-biopelayo.github.io-39ff73?style=flat-square&logo=github-pages&logoColor=white)](https://biopelayo.github.io)
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--9409--1457-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0000-0001-9409-1457)
+[![Email](https://img.shields.io/badge/Email-bio.pelayo@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:bio.pelayo@gmail.com)
+
+<br>
+
+<sub>Compilando... 62%</sub>
+
+</div>
