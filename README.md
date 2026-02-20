@@ -2,6 +2,9 @@
 
 Hi, I’m **Pelayo González de Lena** (`@biopelayo`) — a computational biologist / bioinformatician working on **histone post-translational modifications (hPTMs) in plants**, with a special focus on **H3K79** in *Arabidopsis thaliana*.
 
+<img width="741" height="1024" alt="image" src="https://github.com/user-attachments/assets/0fabe2c6-8ccc-4ad9-bf0e-47f8974d11fa" />
+
+
 This account is the hub for my **PhD thesis**, the **EpiProfile_PLANTS** ecosystem, and several workflows and teaching materials around reproducible omics.
 
 ---
