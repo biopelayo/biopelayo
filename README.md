@@ -190,17 +190,68 @@ Multi-modal biomedical image analysis for retinal imaging, histopathology (OpenS
 </td>
 <td width="50%">
 
-### COURSES
+### CV Forge
 
-**Teaching materials**
+**One CV, 31 styles, 2 languages**
 
-Linux/WSL2/Docker for scientific computing, introductory Python and R/Bioconductor for omics, and small hands-on projects connecting code with real biological questions. Courses delivered at IAAP, University of Oviedo, City Council of Oviedo, FORMACAL, and ARTEAULA.
+A complete CV in a single self-contained HTML file: 31 visual themes, English and Spanish, three headline variants, and PDF export. No build step, no dependencies, no tracking. Open the file and it works.
 
-[![COURSES](https://img.shields.io/badge/COURSES-Repository-f59e0b?style=flat-square&logo=github)](https://github.com/biopelayo/COURSES)
+[![cv-forge](https://img.shields.io/badge/cv--forge-Repository-f59e0b?style=flat-square&logo=github)](https://github.com/biopelayo/cv-forge)
 
 </td>
 </tr>
 </table>
+
+---
+
+## Repository index
+
+A map of what lives in this account, so you don't have to dig through the repository list.
+
+### EpiProfile_PLANTS ecosystem
+
+| Repo | What it is | Stack |
+|:---|:---|:---|
+| [`epiprofile-plants`](https://github.com/biopelayo/epiprofile-plants) | MATLAB core. Species bundles (AT / MP / CR), hDP-hPF-hPTM model | MATLAB |
+| [`epiprofile-plants-workflow`](https://github.com/biopelayo/epiprofile-plants-workflow) | WIFF→mzML→MS1/MS2 preprocessing. Docker + Snakemake | Python |
+| [`epiprofile-dashboard`](https://github.com/biopelayo/epiprofile-dashboard) | Interactive 7-tab dashboard for quantification output | Dash / Plotly |
+| [`epiprofile-plants-at-h3h4`](https://github.com/biopelayo/epiprofile-plants-at-h3h4) | *Arabidopsis* H3/H4 peptide bundle | MATLAB |
+| [`cap4-histone-ptms-at`](https://github.com/biopelayo/cap4-histone-ptms-at) | Reproducible `targets` pipeline for comparative hPTM analysis | R |
+| [`histone-long-table-at`](https://github.com/biopelayo/histone-long-table-at) | Tidy long-format master table for *Arabidopsis* hPTMs | Python |
+
+### Pipelines & analysis
+
+| Repo | What it is | Stack |
+|:---|:---|:---|
+| [`K-CHOPORE`](https://github.com/biopelayo/K-CHOPORE) | 9-stage Nanopore direct RNA-seq pipeline, epitranscriptomics-focused | Snakemake |
+| [`kchopore-anac017-drs`](https://github.com/biopelayo/kchopore-anac017-drs) | K-CHOPORE applied to the *anac017-1* 2x2 factorial experiment | Python |
+| [`VIDIO`](https://github.com/biopelayo/VIDIO) | Multi-modal biomedical imaging orchestrator | Python |
+| [`opencb-docker-stack`](https://github.com/biopelayo/opencb-docker-stack) | Docker Compose stack for OpenCB | Dockerfile |
+
+### Web, tools & personal
+
+| Repo | What it is | Stack |
+|:---|:---|:---|
+| [`biopelayo.github.io`](https://github.com/biopelayo/biopelayo.github.io) | Personal site | HTML |
+| [`cv-forge`](https://github.com/biopelayo/cv-forge) | One-file CV: 31 styles, 2 languages, 3 headlines | HTML |
+| [`asterov-dashboard`](https://github.com/biopelayo/asterov-dashboard) | Liga Asterov dashboard — San Claudio FC | JavaScript |
+| [`paleotxomi`](https://github.com/biopelayo/paleotxomi) | Domingo González de Lena photographic archive + exhibition | TypeScript |
+| [`awesome-awesomers`](https://github.com/biopelayo/awesome-awesomers) | Who curates the curators: awesomers on GitHub | Python |
+| [`pelayo-x-claude`](https://github.com/biopelayo/pelayo-x-claude) | Public dossier of intensive Claude use in research | — |
+| [`analisis-23-F`](https://github.com/biopelayo/analisis-23-F) | Analysis of the 23-F declassified documents | — |
+
+### Archive
+
+<details>
+<summary>Superseded or closed projects — kept read-only for the record</summary>
+
+<br>
+
+| Repo | Status |
+|:---|:---|
+| [`domingo-archivo`](https://github.com/biopelayo/domingo-archivo) | Superseded by [`paleotxomi`](https://github.com/biopelayo/paleotxomi) (May 2026). Archived, read-only |
+
+</details>
 
 ---
 
