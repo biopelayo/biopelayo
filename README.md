@@ -156,7 +156,7 @@ Currently applied to an ***Arabidopsis thaliana*** 2x2 factorial experiment (WT 
 
 **Results**: 20,958 isoforms quantified | 435 DEGs by genotype | 266 DEGs by treatment
 
-[![K-CHOPORE](https://img.shields.io/badge/K--CHOPORE-Repository-a78bfa?style=for-the-badge&logo=github)](https://github.com/biopelayo/K-CHOPORE)
+[![K-CHOPORE](https://img.shields.io/badge/K--CHOPORE-anac017%20study-a78bfa?style=for-the-badge&logo=github)](https://github.com/biopelayo/kchopore-anac017-drs)
 
 ---
 
@@ -223,8 +223,7 @@ A map of what lives in this account, so you don't have to dig through the reposi
 
 | Repo | What it is | Stack |
 |:---|:---|:---|
-| [`K-CHOPORE`](https://github.com/biopelayo/K-CHOPORE) | 9-stage Nanopore direct RNA-seq pipeline, epitranscriptomics-focused | Snakemake |
-| [`kchopore-anac017-drs`](https://github.com/biopelayo/kchopore-anac017-drs) | K-CHOPORE applied to the *anac017-1* 2x2 factorial experiment | Python |
+| [`kchopore-anac017-drs`](https://github.com/biopelayo/kchopore-anac017-drs) | K-CHOPORE pipeline applied to the *anac017-1* 2x2 factorial experiment | Snakemake |
 | [`VIDIO`](https://github.com/biopelayo/VIDIO) | Multi-modal biomedical imaging orchestrator | Python |
 | [`opencb-docker-stack`](https://github.com/biopelayo/opencb-docker-stack) | Docker Compose stack for OpenCB | Dockerfile |
 
@@ -235,23 +234,9 @@ A map of what lives in this account, so you don't have to dig through the reposi
 | [`biopelayo.github.io`](https://github.com/biopelayo/biopelayo.github.io) | Personal site | HTML |
 | [`cv-forge`](https://github.com/biopelayo/cv-forge) | One-file CV: 31 styles, 2 languages, 3 headlines | HTML |
 | [`asterov-dashboard`](https://github.com/biopelayo/asterov-dashboard) | Liga Asterov dashboard — San Claudio FC | JavaScript |
-| [`paleotxomi`](https://github.com/biopelayo/paleotxomi) | Domingo González de Lena photographic archive + exhibition | TypeScript |
 | [`awesome-awesomers`](https://github.com/biopelayo/awesome-awesomers) | Who curates the curators: awesomers on GitHub | Python |
 | [`pelayo-x-claude`](https://github.com/biopelayo/pelayo-x-claude) | Public dossier of intensive Claude use in research | — |
 | [`analisis-23-F`](https://github.com/biopelayo/analisis-23-F) | Analysis of the 23-F declassified documents | — |
-
-### Archive
-
-<details>
-<summary>Superseded or closed projects — kept read-only for the record</summary>
-
-<br>
-
-| Repo | Status |
-|:---|:---|
-| [`domingo-archivo`](https://github.com/biopelayo/domingo-archivo) | Superseded by [`paleotxomi`](https://github.com/biopelayo/paleotxomi) (May 2026). Archived, read-only |
-
-</details>
 
 ---
 
