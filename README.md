@@ -234,6 +234,7 @@ A map of what lives in this account, so you don't have to dig through the reposi
 | [`biopelayo.github.io`](https://github.com/biopelayo/biopelayo.github.io) | Personal site | HTML |
 | [`cv-forge`](https://github.com/biopelayo/cv-forge) | One-file CV: 31 styles, 2 languages, 3 headlines | HTML |
 | [`asterov-dashboard`](https://github.com/biopelayo/asterov-dashboard) | Liga Asterov dashboard — San Claudio FC | JavaScript |
+| [`paleotxomi`](https://github.com/biopelayo/paleotxomi) | Domingo González de Lena photographic archive + exhibition | TypeScript |
 | [`awesome-awesomers`](https://github.com/biopelayo/awesome-awesomers) | Who curates the curators: awesomers on GitHub | Python |
 | [`pelayo-x-claude`](https://github.com/biopelayo/pelayo-x-claude) | Public dossier of intensive Claude use in research | — |
 | [`analisis-23-F`](https://github.com/biopelayo/analisis-23-F) | Analysis of the 23-F declassified documents | — |
