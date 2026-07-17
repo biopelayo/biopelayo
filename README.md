@@ -23,7 +23,7 @@
 
 ## About me
 
-I'm a computational biologist and bioinformatician working on **histone post-translational modifications (hPTMs) in plants**, with a special focus on **H3K79** methylation and acetylation in *Arabidopsis thaliana*.
+I'm a computational biologist and bioinformatician working on **histone post-translational modifications (hPTMs) in plants**, with a special focus on lysine methylation and acetylation marks in *Arabidopsis thaliana*.
 
 Currently finishing my **PhD** at the **University of Oviedo** (FPI fellowship PRE2019-091395), building the **EpiProfile_PLANTS** ecosystem for reproducible plant histone proteomics. Previously at the **Spanish National Cancer Research Centre (CNIO)** in the Computational Cancer Genomics Group.
 
@@ -61,7 +61,7 @@ This account hosts my thesis work, analysis pipelines, teaching materials, and e
 | Area | Description |
 |:---|:---|
 | **Plant epigenomics** | Chromatin regulation and histone PTM landscapes in *Arabidopsis*, *Marchantia*, *Chlamydomonas* |
-| **H3K79 in plants** | Characterising H3K79me1/2/3 and H3K79ac across development and stress |
+| **Histone marks in plants** | Characterising methylation and acetylation states across development and stress |
 | **Histone proteomics** | Quantitative workflows for propionylation-based bottom-up MS |
 | **Epitranscriptomics** | Nanopore direct RNA-seq and m6A modification detection |
 | **Reproducible pipelines** | FAIR-compliant, containerised workflows from raw data to figures |
@@ -160,7 +160,7 @@ Currently applied to an ***Arabidopsis thaliana*** 2x2 factorial experiment (WT 
 
 ---
 
-## PhD thesis: H3K79 in *Arabidopsis thaliana*
+## PhD thesis: histone PTMs in *Arabidopsis thaliana*
 
 My thesis combines four chapters spanning methods, biology, and synthesis:
 
@@ -169,7 +169,7 @@ My thesis combines four chapters spanning methods, biology, and synthesis:
 | **1** | EpiProfile_PLANTS methods | Software validation, species-specific catalogs, QC framework |
 | **2** | Arabidopsis rosette ontogeny | Developmental gradient (YNG / BOT / FLOR / SEN) histone PTM profiling |
 | **3** | Re-analysis of public datasets | Genotoxic stress datasets from PRIDE (PXD010102, PXD046034, etc.) |
-| **4** | H3K79 synthesis | Behaviour across development and stress-related contexts |
+| **4** | Target-mark synthesis | Behaviour of the studied marks across development and stress-related contexts |
 
 ---
 
